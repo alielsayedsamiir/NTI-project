@@ -39,7 +39,6 @@ const getUserCourses = async (req, res) => {
   }
 
 };
-// Add these exports inside user-controllers.js
 const updateUserCourse = async (req, res, next) => {
   res.status(200).json({ status: "success", message: "Course updated successfully" });
 };
@@ -48,7 +47,6 @@ const deleteUserCourse = async (req, res, next) => {
   res.status(200).json({ status: "success", message: "Course deleted successfully" });
 };
 
-// Make sure to export them in module.exports!
 module.exports = {
   addCourseToUser,
   getUserCourses,
